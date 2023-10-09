@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Accordion from './Accordion/Accordion';
 
-const Landing = ({ darkMode, toggleDarkMode }) => {
+const Landing = ({ darkMode }) => {
     return (
         <>
             <h1 className={`flex flex-col items-center mt-10 font-semibold ${darkMode ? 'text-white' : 'text-black'} `}>Ingresa a tu curso</h1>

@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 10000)
+    }, 3000)
   }, []);
   return (
     <Loading isLoading={isLoading}>
