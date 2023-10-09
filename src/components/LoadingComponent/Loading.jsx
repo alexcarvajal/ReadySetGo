@@ -14,10 +14,10 @@ const Loading = ({ isLoading, children }) => {
     if (isLoading) {
         return (
             <div className={`fixed w-full h-full ${opacityClass}`}>
-                <img className="w-full h-full animate-fade-in object-cover sm:hidden animation-ease-in-out" src={BackgroundMobile} alt="Loading..." />
-                <img className="w-full h-full animate-fade-in object-cover hidden sm:block md:hidden animation-ease-in-out" src={BackgroundTablet} alt="Loading..." />
-                <img className="w-full h-full animate-fade-in object-cover hidden md:block lg:hidden animation-ease-in-out" src={BackgroundDesktop} alt="Loading..." />
-                <img className="w-full h-full animate-fade-in object-cover hidden lg:block animation-ease-in-out" src={BackgroundLaptop} alt="Loading..." />
+                <img className="w-full h-full animate-fade-in object-cover sm:block md:hidden lg:hidden xl:hidden animation-ease-in-out" src={BackgroundMobile} alt="Loading..." />
+                <img className="w-full h-full animate-fade-in object-cover sm:hidden md:block lg:hidden xl:hidden animation-ease-in-out" src={BackgroundTablet} alt="Loading..." />
+                <img className="w-full h-full animate-fade-in object-cover sm:hidden md:hidden lg:block xl:hidden animation-ease-in-out" src={BackgroundDesktop} alt="Loading..." />
+                <img className="w-full h-full animate-fade-in object-cover sm:hidden md:hidden lg:hidden xl:block animation-ease-in-out" src={BackgroundLaptop} alt="Loading..." />
             </div>
         );
     }

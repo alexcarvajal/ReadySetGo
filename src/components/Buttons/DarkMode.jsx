@@ -11,7 +11,7 @@ const DarkMode = ({ darkMode, toggleDarkMode }) => {
                     onChange={toggleDarkMode}
                     className="sr-only" // Esconde el input original
                 />
-                <div className="block bg-gray-600 w-14 h-8 rounded-full relative">
+                <div className="block bg-gray-600 w-14 h-8 mr-4 rounded-full relative">
                     {/* Ícono del sol */}
                     <img src={SunButton} className={`absolute top-1 left-1 w-6 h-6 transition-transform duration-300 ease-in-out transform ${darkMode ? 'translate-x-full opacity-0' : 'opacity-100'}`}/>
                     <img src={MoonButton} className={`absolute top-1 left-1 w-6 h-6 transition-transform duration-300 ease-in-out transform ${darkMode ? 'translate-x-full opacity-100' : 'opacity-0'}`}/>
