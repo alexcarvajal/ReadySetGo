@@ -13,14 +13,10 @@ const DarkMode = ({ darkMode, toggleDarkMode }) => {
                 />
                 <div className="block bg-gray-600 w-14 h-8 mr-4 rounded-full relative">
                     {/* Ícono del sol */}
-                    <img src={SunButton} className={`absolute top-1 left-1 w-6 h-6 transition-transform duration-300 ease-in-out transform ${darkMode ? 'translate-x-full opacity-0' : 'opacity-100'}`}/>
-                    <img src={MoonButton} className={`absolute top-1 left-1 w-6 h-6 transition-transform duration-300 ease-in-out transform ${darkMode ? 'translate-x-full opacity-100' : 'opacity-0'}`}/>
+                    <img src={SunButton} className={`absolute top-1 left-1 w-6 h-6 transition-transform duration-300 ease-in-out transform ${darkMode ? 'translate-x-full opacity-0' : 'opacity-100'}`} />
+                    <img src={MoonButton} className={`absolute top-1 left-1 w-6 h-6 transition-transform duration-300 ease-in-out transform ${darkMode ? 'translate-x-full opacity-100' : 'opacity-0'}`} />
                 </div>
-
-
-
-                {/*                 <div className={`absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-transform duration-300 ease-in-out transform ${darkMode ? 'translate-x-full' : ''}`}></div>
- */}            </div>
+            </div>
         </label>
     )
 }

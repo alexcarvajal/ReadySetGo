@@ -13,7 +13,7 @@ const Loading = ({ isLoading, children }) => {
     }, [isLoading]);
     if (isLoading) {
         return (
-            <div className={`fixed w-full h-full ${opacityClass}`}>
+            <div className={`fixed w-full z-50 h-full ${opacityClass}`}>
                 <img className="w-full h-full animate-fade-in object-cover sm:block md:hidden lg:hidden xl:hidden animation-ease-in-out" src={BackgroundMobile} alt="Loading..." />
                 <img className="w-full h-full animate-fade-in object-cover sm:hidden md:block lg:hidden xl:hidden animation-ease-in-out" src={BackgroundTablet} alt="Loading..." />
                 <img className="w-full h-full animate-fade-in object-cover sm:hidden md:hidden lg:block xl:hidden animation-ease-in-out" src={BackgroundDesktop} alt="Loading..." />
@@ -25,6 +25,6 @@ const Loading = ({ isLoading, children }) => {
 }
 Loading.propTypes = {
     isLoading: PropTypes.bool.isRequired,
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
 };
 export default Loading;

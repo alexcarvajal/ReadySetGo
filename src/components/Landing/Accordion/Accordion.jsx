@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
 import RightArrow from '../../../assets/RightArrow.svg'
 import PropTypes from 'prop-types';
 
@@ -23,16 +24,24 @@ const Accordion = ({ title, content, darkMode }) => {
                     />
                 </div>
                 <div className={`overflow-hidden max-h-0 ${isOpen ? 'max-h-[100px]' : ''}`}>
-                    {content}
+                    {Array.isArray(content) ? content.map((item, index) => (
+                        <div key={index}>
+                            <Link to={item.to}>{item.text}</Link>
+                        </div>
+                    )) : content}
                 </div>
             </div>
         </div>
     )
 }
-
 Accordion.propTypes = {
     title: PropTypes.string.isRequired,
-    content: PropTypes.node.isRequired,
+    content: PropTypes.arrayOf(
+        PropTypes.shape({
+            text: PropTypes.string.isRequired,
+            to: PropTypes.string.isRequired
+        })
+    ).isRequired,    
     darkMode: PropTypes.bool.isRequired,
 }
 export default Accordion
