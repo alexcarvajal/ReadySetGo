@@ -21,16 +21,14 @@ const App = () => {
     return (
         <>
             <Loading isLoading={isLoading}></Loading>
-            <div className={`${darkMode ? 'dark' : ''} transition-colors duration-500`}>
                 <Router>
                     <Routes>
                         <Route index element={<Home darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />} />
-                        <Route path="/affirmativeToBe" element={<AffirmativeToBe />} />
+                        <Route path="/affirmativeToBe" element={<AffirmativeToBe darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />} />
                         <Route path="/negativeToBe" element={<NegativeToBe />} />
                         <Route path="/interrogativeToBe" element={<InterrogativeToBe />} />
                     </Routes>
                 </Router>
-            </div>
        </>
     )
 }
