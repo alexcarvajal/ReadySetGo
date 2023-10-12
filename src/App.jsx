@@ -25,8 +25,8 @@ const App = () => {
                     <Routes>
                         <Route index element={<Home darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />} />
                         <Route path="/affirmativeToBe" element={<AffirmativeToBe darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />} />
-                        <Route path="/negativeToBe" element={<NegativeToBe />} />
-                        <Route path="/interrogativeToBe" element={<InterrogativeToBe />} />
+                        <Route path="/negativeToBe" element={<NegativeToBe darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)}/>} />
+                        <Route path="/interrogativeToBe" element={<InterrogativeToBe darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />} />
                     </Routes>
                 </Router>
        </>

@@ -5,7 +5,7 @@ import Landing from "../components/Landing/Landing"
 const Home = ({ darkMode, toggleDarkMode, title, showButton }) => {
   return (
     <div>
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} showButton={false} title='ReadySetGo' />
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} showButton={false} title='ReadySetGo'  />
       <Landing darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     </div>
   );

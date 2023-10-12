@@ -1,10 +1,10 @@
 import Header from '../../../../Header';
 import PropTypes from 'prop-types';
 
-const InterrogativeToBe = ({ darkMode, toggleDarkMode, title }) => {
+const InterrogativeToBe = ({ darkMode, toggleDarkMode, title, showButton }) => {
   return (
     <>
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} title="Interrogative To Be" />
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} showButton={true}  title="Interrogative To Be" />
       <div className={`min-h-full ${darkMode ? 'bg-custom-shark' : 'bg-custom-whisper'}`}>
         <h1 className=
           {

@@ -11,7 +11,6 @@ const AffirmativeToBe = ({darkMode, toggleDarkMode, title, showButton}) => {
                 }
             >Choose your course</h1>
             <div className="flex flex-col items-center mt-10 h-screen">
-              
             </div>
         </div>
     </>
